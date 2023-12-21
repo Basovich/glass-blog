@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $media-tab-sm) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  @media (min-width: $media-des-sm) {
+    padding-left: calc((100% - 1110px) / 2);
+    padding-right: calc((100% - 1110px) / 2);
+  }
+}
+
+.custom-scroll {
+  scrollbar-width: auto;
+  scrollbar-color: $black-rock $wild-sand;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $wild-sand;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $black-rock;
+  }
+}
+
+.ellipsis-sting {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
