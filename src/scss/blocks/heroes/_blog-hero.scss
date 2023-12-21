@@ -1,0 +1,31 @@
+.blog-hero {
+  @media (min-width: $media-tab-md) {
+    display: flex;
+  }
+
+  .main-post {
+    @media (min-width: $media-tab-md) {
+      flex: 1 1;
+    }
+  }
+
+  .short-post {
+    margin-top: 12px;
+
+    @media (min-width: $media-tab-md) {
+      width: 250px;
+    }
+
+    @media (min-width: $media-des-sm) {
+      width: 455px;
+    }
+
+    &:nth-of-type(1) {
+      margin-top: 16px;
+
+      @media (min-width: $media-tab-md) {
+        margin-top: 0;
+      }
+    }
+  }
+}

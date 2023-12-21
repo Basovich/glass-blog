@@ -1,0 +1,95 @@
+.short-post {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(26, 27, 56, 0.09);
+
+  @media (min-width: $media-tab-md) {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  @media (min-width: $media-tab-md) {
+    padding: 12px 16px;
+  }
+
+  &__category {
+    color: $sunset-orange;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    transition: color .2s;
+
+    @media (min-width: $media-des-sm) {
+      font-size: 1.6rem;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:focus-visible {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $martinique;
+    }
+  }
+
+  &__date {
+    color: $martinique;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 8px;
+
+    @media (min-width: $media-tab-md) {
+      font-size: 1.4rem;
+    }
+
+    @media (min-width: $media-des-sm) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__title {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    color: $black-rock;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    transition: color .2s;
+
+    @media (min-width: $media-des-sm) {
+      font-size: 2rem;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $sunset-orange;
+      }
+    }
+
+    &:focus-visible {
+      color: $sunset-orange;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $martinique;
+    }
+  }
+}

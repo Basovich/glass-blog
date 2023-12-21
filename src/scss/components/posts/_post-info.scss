@@ -1,0 +1,127 @@
+.post-info {
+  display: flex;
+  align-items: flex-start;
+
+  &__img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 12px;
+    
+    @media (min-width: $media-tab-md) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__body {
+    flex: 1 1;
+  }
+
+  &__main-text {
+    display: flex;
+    color: $black-rock;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    @media (min-width: $media-tab-md) {
+      font-size: 1.6rem;
+    }
+
+    &-author {
+      display: flex;
+      color: $black-rock;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-decoration: none;
+
+      @media (min-width: $media-tab-md) {
+        font-size: 1.6rem;
+      }
+
+      @media (any-hover: hover) {
+        &:hover {
+          color: $sunset-orange;
+        }
+      }
+
+      &:focus-visible {
+        text-decoration: underline;
+        color: $sunset-orange;
+      }
+
+      &:active {
+        color: $martinique;
+      }
+    }
+
+    &-category {
+      color: $sunset-orange;
+      text-decoration: none;
+      margin: 0 4px;
+      transition: color .2s;
+
+      @media (any-hover: hover) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:focus-visible {
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: $martinique;
+      }
+    }
+
+    address {
+      font-size: inherit;
+      font-style: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      margin: 0 3px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    color: $martinique;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (min-width: $media-tab-md) {
+      font-size: 1.6rem;
+      margin-top: 8px;
+    }
+
+    time {
+      margin: 0 3px;
+    }
+  }
+
+  &__read {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: $martinique;
+      border-radius: 50%;
+      margin: 0 8px;
+    }
+  }
+}

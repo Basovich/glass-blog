@@ -1,3 +1,10 @@
-body {
-  min-height: 200vh;
-}
+/* base */
+@import "../base/vars";
+
+/* components */
+@import "../components/posts/main-post";
+@import "../components/posts/post-info";
+@import "../components/posts/short-post";
+
+/* blocks */
+@import "../blocks/heroes/blog-hero";
