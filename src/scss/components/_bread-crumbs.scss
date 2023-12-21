@@ -1,0 +1,73 @@
+.bread-crumbs {
+  &-wrap {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    color: rgba($black-rock, 0.70);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $black-rock;
+        text-decoration: underline;
+      }
+    }
+
+    &:focus-visible {
+      color: $black-rock;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $sunset-orange;
+      text-decoration: underline;
+    }
+
+    @media (min-width: $media-tab-sm) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__current {
+    color: $black-rock;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media (min-width: $media-tab-sm) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__arrow {
+    display: block;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+    @media (min-width: $media-tab-sm) {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+}
