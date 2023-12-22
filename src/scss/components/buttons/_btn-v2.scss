@@ -1,0 +1,57 @@
+.btn-v2 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 40px;
+  position: relative;
+  text-decoration: none;
+  height: 54px;
+  background-color: #fff;
+  border-radius: 90px;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    }
+
+    &:hover &__text {
+      color: #fff;
+      background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
+    }
+  }
+
+  &:focus-visible {
+    outline: 0;
+    background-image: none;
+    background-color: transparent;
+    border: 3px solid #fff;
+
+    .btn-v2__text {
+      color: #fff;
+      background-image: linear-gradient(90deg, #fff 0%, #fff 100%);
+    }
+  }
+
+  &:active {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 4px;
+  }
+}

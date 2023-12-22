@@ -1,0 +1,46 @@
+.cta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  background: linear-gradient(89deg, #8439FF 0%, #C039FF 33.69%, #FF398C 66.85%, #FFBE3F 101.06%);
+  padding: 44px 12px;
+  margin-bottom: 36px;
+  
+  @media (min-width: $media-tab-sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 44px 20px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $media-des-sm) {
+    padding: 44px 64px;
+  }
+
+  &__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+    
+    @media (min-width: $media-tab-sm) {
+      font-size: 2.4rem;
+      text-align: left;
+    }
+    
+    @media (min-width: $media-des-sm) {
+      font-size: 3.6rem;
+    }
+  }
+
+  .btn-v2 {
+    margin-top: 95px;
+
+    @media (min-width: $media-tab-sm) {
+      margin-top: 0;
+    }
+  }
+}
