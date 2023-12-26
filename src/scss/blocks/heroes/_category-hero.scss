@@ -1,0 +1,29 @@
+.category-hero {
+  margin-bottom: 12px;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $media-tab-sm) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $media-tab-lg) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  &__subtitle {
+    color: $martinique;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 12px;
+    max-width: 641px;
+    
+    @media (min-width: $media-tab-sm) {
+      font-size: 1.6rem;
+    }
+  }
+}
