@@ -6,7 +6,7 @@
   background: #FFF;
   box-shadow: 0 2px 12px 0 rgba(26, 27, 56, 0.09);
 
-  @media (min-width: $media-des-sm) {
+  @media (min-width: $media-tab-sm) {
     box-shadow: none;
     background-color: transparent;
   }
