@@ -1,0 +1,44 @@
+.posts-v1 {
+  margin-bottom: 60px;
+
+  @media (min-width: $media-tab-sm) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .title-h1 {
+    margin-bottom: 12px;
+
+    @media (min-width: $media-tab-sm) {
+      width: 100%;
+      margin-bottom: 18px;
+    }
+  }
+
+  .post-v1 {
+    @media (min-width: $media-tab-sm) {
+      width: calc(50% - 6px);
+      margin-bottom: 12px;
+    }
+    
+    @media (min-width: $media-des-sm) {
+      width: calc(33.33% - 6px);
+    }
+  }
+
+  .post-v1 + .post-v1 {
+    margin-top: 12px;
+
+    @media (min-width: $media-tab-sm) {
+      margin-top: 0;
+    }
+  }
+
+  .btn-v3 {
+    margin-top: 22px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

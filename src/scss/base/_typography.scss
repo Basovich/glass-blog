@@ -1,0 +1,11 @@
+.title-h1 {
+  color: $black-rock;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
+  @media (min-width: $media-tab-sm) {
+    font-size: 2.4rem;
+  }
+}
