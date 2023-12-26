@@ -95,6 +95,11 @@
       &:active {
         transform: translateY(2px);
       }
+
+      &.swiper-button-disabled {
+        pointer-events: none;
+        opacity: 0;
+      }
     }
 
     &-next {
