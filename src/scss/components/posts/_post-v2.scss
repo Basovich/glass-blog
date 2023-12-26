@@ -23,6 +23,14 @@
       height: 192px;
       width: calc(50% - 6px);
     }
+    
+    @media (min-width: $media-des-sm) {
+      height: 228px;
+    }
+
+    .author-page & {
+      height: 190px;
+    }
   }
 
   &__body {

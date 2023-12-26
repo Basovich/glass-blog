@@ -12,8 +12,9 @@ module.exports = {
   devtool,
   entry: {
     index: ['./src/js/pages/index.js', './src/scss/pages/index.scss', './src/js/global.js', './src/scss/global.scss'],
-    search: ['./src/js/pages/search.js', './src/scss/pages/search.scss', './src/js/global.js', './src/scss/global.scss'],
-    category: ['./src/js/pages/category.js', './src/scss/pages/category.scss', './src/js/global.js', './src/scss/global.scss'],
+    search: ['./src/scss/pages/search.scss', './src/js/global.js', './src/scss/global.scss'],
+    category: ['./src/scss/pages/category.scss', './src/js/global.js', './src/scss/global.scss'],
+    author: ['./src/js/global.js', './src/scss/global.scss', './src/scss/pages/author.scss'],
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -78,6 +79,11 @@ module.exports = {
       template: './src/html/category.html',
       filename: 'category.html',
       chunks: ['category']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/html/author.html',
+      filename: 'author.html',
+      chunks: ['author']
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].min.css',

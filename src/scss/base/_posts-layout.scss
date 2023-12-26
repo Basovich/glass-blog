@@ -54,6 +54,17 @@
     padding-right: 0;
   }
 
+  .title-h1 {
+    .author-page & {
+      display: none;
+
+      @media (min-width: $media-tab-sm) {
+        display: block;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
   .post-v2 + .post-v2 {
     margin-top: 12px;
   }

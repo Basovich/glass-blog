@@ -1,0 +1,103 @@
+.author-hero {
+  margin-bottom: 44px;
+
+  @media (min-width: $media-tab-sm) {
+    display: flex;
+  }
+
+  @media (min-width: $media-tab-lg) {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__photo-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+    
+    @media (min-width: $media-tab-sm) {
+      display: block;
+    }
+  }
+
+  &__info {
+    @media (min-width: $media-tab-sm) {
+      flex: 1 1;
+      margin-top: 8px;
+      margin-left: 24px;
+    }
+  }
+
+  &__photo {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    @media (min-width: $media-tab-sm) {
+      width: 112px;
+      height: 112px;
+    }
+  }
+
+  &__icons {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $media-tab-sm) {
+      justify-content: center;
+      margin-left: 0;
+      margin-top: 24px;
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+
+    &-link {
+      display: block;
+      width: 24px;
+      height: 24px;
+
+      & + & {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__posts-count {
+    color: $sunset-orange;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 8px;
+    
+    @media (min-width: $media-tab-sm) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__text {
+    color: $martinique;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 8px;
+
+    @media (min-width: $media-tab-sm) {
+      font-size: 1.5rem;
+    }
+  }
+}
