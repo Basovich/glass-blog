@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="custom-scroll">
+    <header class="header container">
+        <!-- ####################################################### -->
+        <!-- For Front page (template) -->
+        <picture class="header__logo-link">
+            <img src="../assets/images/logos/logo-white.svg" alt="Logotype Glassagram" class="header__logo">
+        </picture>
+        <!-- For all pages (template) -->
+       <!-- <a href="/" class="header__logo-link" aria-label="Link to main blog page">
+            <img src="../assets/images/logos/logo-white.svg" alt="Logotype Glassagram" class="header__logo">
+        </a>-->
+        <!-- ####################################################### -->
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="/" class="header__nav-link">Category1</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/" class="header__nav-link">Category2</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/" class="header__nav-link">Category3</a>
+                </li>
+            </ul>
+            <button class="header__search-btn" type="button" data-open-search-form>
+                <svg class="header__search-btn-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><mask id="mask0_29_9612" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25"><rect x="0.5" y="0.5" width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_29_9612)"><path d="M10 16.5C8.18333 16.5 6.64583 15.8708 5.3875 14.6125C4.12917 13.3542 3.5 11.8167 3.5 10C3.5 8.18333 4.12917 6.64583 5.3875 5.3875C6.64583 4.12917 8.18333 3.5 10 3.5C11.8167 3.5 13.3542 4.12917 14.6125 5.3875C15.8708 6.64583 16.5 8.18333 16.5 10C16.5 10.7333 16.3833 11.425 16.15 12.075C15.9167 12.725 15.6 13.3 15.2 13.8L20.8 19.4C20.9833 19.5833 21.075 19.8167 21.075 20.1C21.075 20.3833 20.9833 20.6167 20.8 20.8C20.6167 20.9833 20.3833 21.075 20.1 21.075C19.8167 21.075 19.5833 20.9833 19.4 20.8L13.8 15.2C13.3 15.6 12.725 15.9167 12.075 16.15C11.425 16.3833 10.7333 16.5 10 16.5ZM10 14.5C11.25 14.5 12.3125 14.0625 13.1875 13.1875C14.0625 12.3125 14.5 11.25 14.5 10C14.5 8.75 14.0625 7.6875 13.1875 6.8125C12.3125 5.9375 11.25 5.5 10 5.5C8.75 5.5 7.6875 5.9375 6.8125 6.8125C5.9375 7.6875 5.5 8.75 5.5 10C5.5 11.25 5.9375 12.3125 6.8125 13.1875C7.6875 14.0625 8.75 14.5 10 14.5Z" fill="white"/></g></svg>
+                Search
+            </button>
+        </nav>
+        <a href="https://glassagram.com/type-of-account.html" class="header__btn btn-v1">
+            <span class="btn-v1__inner">Try Now</span>
+        </a>
+        <button type="button"
+                class="header__hamburger hamburger"
+                aria-label="Click to toggle mobile menu"
+                data-hamburger
+        >
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+        </button>
+        <form action="#" class="header__search-form container">
+            <div class="header__search-form-inner">
+                <button class="header__search-submit" aria-label="Click to search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><mask id="mask0_29_7470" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_29_7470)"><path d="M9.5 16C7.68333 16 6.14583 15.3708 4.8875 14.1125C3.62917 12.8542 3 11.3167 3 9.5C3 7.68333 3.62917 6.14583 4.8875 4.8875C6.14583 3.62917 7.68333 3 9.5 3C11.3167 3 12.8542 3.62917 14.1125 4.8875C15.3708 6.14583 16 7.68333 16 9.5C16 10.2333 15.8833 10.925 15.65 11.575C15.4167 12.225 15.1 12.8 14.7 13.3L20.3 18.9C20.4833 19.0833 20.575 19.3167 20.575 19.6C20.575 19.8833 20.4833 20.1167 20.3 20.3C20.1167 20.4833 19.8833 20.575 19.6 20.575C19.3167 20.575 19.0833 20.4833 18.9 20.3L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16ZM9.5 14C10.75 14 11.8125 13.5625 12.6875 12.6875C13.5625 11.8125 14 10.75 14 9.5C14 8.25 13.5625 7.1875 12.6875 6.3125C11.8125 5.4375 10.75 5 9.5 5C8.25 5 7.1875 5.4375 6.3125 6.3125C5.4375 7.1875 5 8.25 5 9.5C5 10.75 5.4375 11.8125 6.3125 12.6875C7.1875 13.5625 8.25 14 9.5 14Z" fill="#05012C"/></g></svg>
+                </button>
+                <input type="text" class="header__search-input ellipsis-sting" placeholder="Search">
+                <button class="header__search-close" type="reset" aria-label="Close and reset search form" data-close-search-form>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><mask id="mask0_62_853" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect width="24" height="24" fill="#D9D9D9"/></mask><g mask="url(#mask0_62_853)"><path d="M11.9998 13.4L7.0998 18.3C6.91647 18.4834 6.68314 18.575 6.3998 18.575C6.11647 18.575 5.88314 18.4834 5.6998 18.3C5.51647 18.1167 5.4248 17.8834 5.4248 17.6C5.4248 17.3167 5.51647 17.0834 5.6998 16.9L10.5998 12L5.6998 7.10005C5.51647 6.91672 5.4248 6.68338 5.4248 6.40005C5.4248 6.11672 5.51647 5.88338 5.6998 5.70005C5.88314 5.51672 6.11647 5.42505 6.3998 5.42505C6.68314 5.42505 6.91647 5.51672 7.0998 5.70005L11.9998 10.6L16.8998 5.70005C17.0831 5.51672 17.3165 5.42505 17.5998 5.42505C17.8831 5.42505 18.1165 5.51672 18.2998 5.70005C18.4831 5.88338 18.5748 6.11672 18.5748 6.40005C18.5748 6.68338 18.4831 6.91672 18.2998 7.10005L13.3998 12L18.2998 16.9C18.4831 17.0834 18.5748 17.3167 18.5748 17.6C18.5748 17.8834 18.4831 18.1167 18.2998 18.3C18.1165 18.4834 17.8831 18.575 17.5998 18.575C17.3165 18.575 17.0831 18.4834 16.8998 18.3L11.9998 13.4Z" fill="#05012C"/></g></svg>
+                </button>
+            </div>
+        </form>
+    </header>
+    <main class="main-content">
+        <section class="container bread-crumbs-wrap">
+            <nav class="bread-crumbs">
+                <ul class="bread-crumbs__list">
+                    <li class="bread-crumbs__item">
+                        <a href="#" class="bread-crumbs__link">Home</a>
+                        <img src="../assets/images/bread-crumbs-arrow.svg" alt="" class="bread-crumbs__arrow">
+                    </li>
+                    <li class="bread-crumbs__item">
+                        <a href="#" class="bread-crumbs__link">Blog</a>
+                        <img src="../assets/images/bread-crumbs-arrow.svg" alt="" class="bread-crumbs__arrow">
+                    </li>
+                    <li class="bread-crumbs__item ellipsis-sting">
+                        <span class="bread-crumbs__current ellipsis-sting">Search</span>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="container search-hero">
+            <h1 class="title-h1">Search results for: “Post”</h1>
+            <p class="search-hero__subtitle">Item found: 6</p>
+        </section>
+        <section class="container posts-v1">
+            <h2 class="title-h1">Latest posts</h2>
+            <article class="post-v1">
+                <img src="../assets/images/poster.jpg" alt="" class="post-v1__img">
+                <a href="#" class="post-v1__title">
+                    SUS Slang Meaning: Decoding the Cool Kids’ Language
+                </a>
+                <div class="post-info">
+                    <div class="post-info__body">
+                        <div class="post-info__main-text">
+                            By
+                            <a href="#" class="post-info__main-text-author"><address>Author Name</address></a>
+                            in
+                            <a href="#" class="post-info__main-text-category">Category</a>
+                        </div>
+                        <p class="post-info__text">
+                            Updated <time datetime="2023-12-01">01 Dec, 2023</time>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="post-v1">
+                <img src="../assets/images/poster.jpg" alt="" class="post-v1__img">
+                <a href="#" class="post-v1__title">
+                    SUS Slang Meaning: Decoding the Cool Kids’ Language
+                </a>
+                <div class="post-info">
+                    <div class="post-info__body">
+                        <div class="post-info__main-text">
+                            By
+                            <a href="#" class="post-info__main-text-author"><address>Author Name</address></a>
+                            in
+                            <a href="#" class="post-info__main-text-category">Category</a>
+                        </div>
+                        <p class="post-info__text">
+                            Updated <time datetime="2023-12-01">01 Dec, 2023</time>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="post-v1">
+                <img src="../assets/images/poster.jpg" alt="" class="post-v1__img">
+                <a href="#" class="post-v1__title">
+                    SUS Slang Meaning: Decoding the Cool Kids’ Language
+                </a>
+                <div class="post-info">
+                    <div class="post-info__body">
+                        <div class="post-info__main-text">
+                            By
+                            <a href="#" class="post-info__main-text-author"><address>Author Name</address></a>
+                            in
+                            <a href="#" class="post-info__main-text-category">Category</a>
+                        </div>
+                        <p class="post-info__text">
+                            Updated <time datetime="2023-12-01">01 Dec, 2023</time>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="post-v1">
+                <img src="../assets/images/poster.jpg" alt="" class="post-v1__img">
+                <a href="#" class="post-v1__title">
+                    SUS Slang Meaning: Decoding the Cool Kids’ Language
+                </a>
+                <div class="post-info">
+                    <div class="post-info__body">
+                        <div class="post-info__main-text">
+                            By
+                            <a href="#" class="post-info__main-text-author"><address>Author Name</address></a>
+                            in
+                            <a href="#" class="post-info__main-text-category">Category</a>
+                        </div>
+                        <p class="post-info__text">
+                            Updated <time datetime="2023-12-01">01 Dec, 2023</time>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="post-v1">
+                <img src="../assets/images/poster.jpg" alt="" class="post-v1__img">
+                <a href="#" class="post-v1__title">
+                    SUS Slang Meaning: Decoding the Cool Kids’ Language
+                </a>
+                <div class="post-info">
+                    <div class="post-info__body">
+                        <div class="post-info__main-text">
+                            By
+                            <a href="#" class="post-info__main-text-author"><address>Author Name</address></a>
+                            in
+                            <a href="#" class="post-info__main-text-category">Category</a>
+                        </div>
+                        <p class="post-info__text">
+                            Updated <time datetime="2023-12-01">01 Dec, 2023</time>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <article class="post-v1">
+                <img src="../assets/images/poster.jpg" alt="" class="post-v1__img">
+                <a href="#" class="post-v1__title">
+                    SUS Slang Meaning: Decoding the Cool Kids’ Language
+                </a>
+                <div class="post-info">
+                    <div class="post-info__body">
+                        <div class="post-info__main-text">
+                            By
+                            <a href="#" class="post-info__main-text-author"><address>Author Name</address></a>
+                            in
+                            <a href="#" class="post-info__main-text-category">Category</a>
+                        </div>
+                        <p class="post-info__text">
+                            Updated <time datetime="2023-12-01">01 Dec, 2023</time>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <button class="btn-v3" type="button">
+                Load more
+            </button>
+        </section>
+        <section class="container">
+            <article class="cta">
+                <p class="cta__title">Track a instagram <br> account with Glassagram</p>
+                <a href="#" class="btn-v2">
+                    <span class="btn-v2__text">Try Now</span>
+                    <img src="../assets/images/emoji-fire.png" alt="" class="btn-v2__icon">
+                </a>
+            </article>
+        </section>
+        <section class="container subscribe-form">
+            <p class="subscribe-form__title">
+                Sign up to our newsletters
+            </p>
+            <p class="subscribe-form__subtitle">
+                We’ll fill you in on our discounts & special offers, the latest blog posts, and other relevant info
+            </p>
+            <form action="#" class="subscribe-form__form">
+                <input type="text" class="subscribe-form__input ellipsis-sting" placeholder="Enter your email">
+                <button class="subscribe-form__submit">Subscribe</button>
+            </form>
+            <p class="subscribe-form__footnote">
+                By signing up to our newsletters, you agree to receive our marketing emails.
+            </p>
+        </section>
+    </main>
+    <footer class="footer container">
+        <!-- ####################################################### -->
+        <!-- For Front page (template) -->
+        <picture class="footer__logo-link">
+            <img src="../assets/images/logos/logo-white.svg" alt="Logotype Glassagram" class="footer__logo">
+        </picture>
+        <!-- For all pages (template) -->
+        <!-- <a href="/" class="footer__logo-link" aria-label="Link to main blog page">
+             <img src="../assets/images/logos/logo-white.svg" alt="Logotype Glassagram" class="footer__logo">
+         </a>-->
+        <!-- ####################################################### -->
+        <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Features</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">About us</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Contact</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Terms of service</a>
+                </li>
+                <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Privacy Policy</a>
+                </li>
+            </ul>
+        </nav>
+        <p class="footer__legal">© 2021 Glassagram | All Rights Reserved.</p>
+        <button class="scroll-top" type="button" aria-label="Click to scroll the slider back" data-scroll-top>
+            <svg class="scroll-top__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><mask id="mask0_29_10093" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><rect x="24" width="24" height="24" transform="rotate(90 24 0)" fill="#D9D9D9"/></mask><g mask="url(#mask0_29_10093)"><path d="M2 16L12 6L22 16L20.225 17.775L12 9.55L3.775 17.775L2 16Z" /></g></svg>
+        </button>
+    </footer>
+</body>
+</html>
